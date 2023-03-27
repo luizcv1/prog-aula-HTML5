@@ -1,0 +1,23 @@
+@charset "UTF8";
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*menu de navegção*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 700px;
+}
+
+nav#menu li {
+    position: relative;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
