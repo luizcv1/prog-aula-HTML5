@@ -1,9 +1,23 @@
 @charset "UTF8";
 
 body {
-
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: #0f0f0f;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/*usado para deixar sublinhado quando passa o mouse em cima do link*/
+a:hover {
+    text-decoration: underline;
 }
 
 div#specs {
@@ -31,7 +45,6 @@ nav#menu ul {
     position: absolute;
     top: -15px;
     left: 600px;
-
 }
 
 /*para deixar a lista um do lado do outro*/
@@ -68,11 +81,11 @@ section#corposp {
 }
 
 
-footer#rodape {
+footer#rodapesp {
     clear: both;
     border-top: 1px solid #606060;
 }
 
-footer#rodape p {
+footer#rodapesp p {
     text-align: center;
 }

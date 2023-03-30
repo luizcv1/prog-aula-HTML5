@@ -2,7 +2,7 @@
 
 
 body {
-
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: #0f0f0f;
 }
@@ -36,10 +36,19 @@ header#cabecalhomt h1 {
     margin-bottom: 0px;
 }
 
-
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/*usado para deixar sublinhado quando passa o mouse em cima do link*/
+a:hover {
+    text-decoration: underline;
 }
 
 /*formatacao de imagens com legendas*/
@@ -118,11 +127,11 @@ section#corpomt {
     padding: 25px;
 }
 
-footer#rodape {
+footer#rodapemt {
     clear: both;
     border-top: 1px solid #606060;
 }
 
-footer#rodape p {
+footer#rodapemt p {
     text-align: center;
 }

@@ -1,8 +1,23 @@
 @charset "UTF8";
-body {
 
+body {
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: #0f0f0f;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/*usado para deixar sublinhado quando passa o mouse em cima do link*/
+a:hover {
+    text-decoration: underline;
 }
 
 div#fotos {
@@ -65,11 +80,11 @@ nav#menu a {
     text-decoration: none;
 }
 
-footer#rodape {
+footer#rodapeft {
     clear: both;
     border-top: 1px solid #606060;
 }
 
-footer#rodape p {
+footer#rodapeft p {
     text-align: center;
 }
