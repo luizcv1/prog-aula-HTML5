@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="_css/media.css" />
     <link rel="stylesheet" href="_css/specs.css" />
 
+
 </head>
+<script src="_javaScript/funcoes.js"></script>
 
 <body>
-    <div id="specs">
-        <header id="cabecalhosp">
+    <div id="interface">
+        <header id="cabecalho">
 
 
 
@@ -27,14 +29,25 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul type="disc">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="specs.html">Especificações</a></li>
-                    <li><a href="fotos.html">Foto</a>s</li>
-                    <li><a href="multimidia.html">Multimídia</a></li>
-                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmouseover="mudafoto('_imagens/home.png')"
+                        onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudafoto('_imagens/especificacoes.png')"
+                        onmouseout="mudafoto('_imagens/especificacoes.png')"><a href=" specs.html">
+                            Especificações</a></li>
+                    <li onmouseover="mudafoto('_imagens/fotos.png')"
+                        onmouseout="mudafoto('_imagens/especificacoes.png')"><a href=" fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudafoto('_imagens/multimidia.png')"
+                        onmouseout="mudafoto('_imagens/especificacoes.png')"><a href=" multimidia.html">
+                            Multimídia</a></li>
+                    <li onmouseover="mudafoto('_imagens/contato.png')"
+                        onmouseout="mudafoto('_imagens/especificacoes.png')"><a href=" fale-conosco.html">Fale
+                            conosco</a></li>
                 </ul>
             </nav>
-            <section id="corposp">
+        </header>
+        <section>
+            <article id="noticia-principal">
 
                 Glass > Especificações
                 Raio-X no Google Glass
@@ -47,16 +60,15 @@
                     ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 
                 [AQUI ENTRA UMA IMAGEM]
-            </section>
+            </article>
+        </section>
 
-            <footer id="rodapesp">
-                <p>&copy; Copyright 2013 - by Gustavo Guanabara </br>
-                    <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a>
-                    | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a>
-                </p>
-            </footer>
-
-        </header>
+        <footer id="rodape">
+            <p>&copy; Copyright 2013 - by Gustavo Guanabara </br>
+                <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a>
+                | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a>
+            </p>
+        </footer>
     </div>
 </body>
 
