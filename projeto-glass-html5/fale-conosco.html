@@ -56,37 +56,39 @@
             </header>
 
 
-            <div id="identificacao">
-                <h3>Identificação do Usuário</h3>
-                Nome:
-                Senha:
-                E-mail:
-                Sexo:
-                - Masculino
-                - Feminino
-                Data de Nascimento:
-            </div>
-
-            <div id="endereco">
-                <h3>Endereço do Usuário</h3>
-                Logradouro:
-                Número:
-                Estado:
-                Cidade:
-            </div>
-            <div id="Mensagem">
-                <h3>Mensagem do Usuário</h3>
-                Grau de Urgência:
-                Mensagem:
-            </div>
-            <div id="quero">
-                <h3>Quero um Google Glass</h3>
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                <p>Nome:<input type="text" name="tname" id="cname"/></p>
+                <p>Senha:<input type="text" name="tname" id="cname"/></p>
+                <p>E-mail:<input type="text" name="tname" id="cname"/></p>
+                <fieldset id="Sexo">
+                    <legend>Sexo</legend>
+                    - Masculino
+                    - Feminino
+                </fieldset>
+                <p>Data de Nascimento:<input type="text" name="tname" id="cname"/></p>
+            </fieldset>
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p>Logradouro:<input type="text" name="tname" id="cname"/></p>
+                <p>Número:<input type="text" name="tname" id="cname"/></p>
+                <p>Estado:<input type="text" name="tname" id="cname"/></p>
+                <p>Cidade:<input type="text" name="tname" id="cname"/></p>
+            </fieldset>
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                <p>Grau de Urgência:<input type="text" name="tname" id="cname"/></p>
+                <p>Mensagem:<input type="text" name="tname" id="cname"/></p>
+            </fieldset>
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
                 <p>Gostaria de adquirir um Google Glass quando disponível</p>
-                Cor:
-                Quantidade:
-                Preço Total: R$
-                [BOTÃO ENVIAR]
-            </div>
+                <p>Cor:<input type="text" name="tname" id="cname"/></p>
+                <p>Quantidade:<input type="text" name="tname" id="cname"/></p>
+                <p>Preço Total: R$<input type="text" name="tname" id="cname"/></p>
+
+            </fieldset>
+            <button>ENVIAR</button>
         </section>
 
         <footer id="rodape">
