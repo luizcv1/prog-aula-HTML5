@@ -43,7 +43,7 @@
                 </ul>
             </nav>
         </header>
-        <section>
+        <form>
             <header id="cabecalho-artigo">
 
                 <hgroup>
@@ -58,38 +58,51 @@
 
             <fieldset id="usuario">
                 <legend>Identificação do Usuário</legend>
-                <p>Nome:<input type="text" name="tname" id="cname"/></p>
-                <p>Senha:<input type="text" name="tname" id="cname"/></p>
-                <p>E-mail:<input type="text" name="tname" id="cname"/></p>
+                <p><label for="cname"> Nome:</label> <input type="text" name="tname" id="cname" size="20" maxlength="30"
+                        placeholder="Nome completo" /></p>
+                <p> <label for="csenha"> Senha:</label><input type="password" name="tsenha" id="csenha" size="8"
+                        maxlength="8" placeholder="8 digitos" />
+                </p>
+                <p> <label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20"
+                        maxlength="40" placeholder="E-mail" />
+                </p>
+
                 <fieldset id="Sexo">
                     <legend>Sexo</legend>
-                    - Masculino
-                    - Feminino
+                    <input type="radio" name="tsexo" id="cmasc" /> <label for="cmasc"> Masculino</label>
+                    <input type="radio" name="tsexo" id="cfen" /><label for="cfen">
+                        Feminino</label>
                 </fieldset>
-                <p>Data de Nascimento:<input type="text" name="tname" id="cname"/></p>
+                <p> <label for="cdata"> Data de Nascimento:</label> <input type="text" name="tdata" id="cdata" size="8"
+                        maxlength="8" placeholder="DD/MM/AA" /></p>
             </fieldset>
+
             <fieldset id="endereco">
                 <legend>Endereço do Usuário</legend>
-                <p>Logradouro:<input type="text" name="tname" id="cname"/></p>
-                <p>Número:<input type="text" name="tname" id="cname"/></p>
-                <p>Estado:<input type="text" name="tname" id="cname"/></p>
-                <p>Cidade:<input type="text" name="tname" id="cname"/></p>
+                <p> <label for="cindereco"> Logradouro:</label> <input type="text" name="tindereco" id="cindereco"
+                        size="20" maxlength="30" placeholder="Rua.Av.Trav" /></p>
+                <p>Número:<input type="text" name="tname" id="cname" size="20" maxlength="30" /></p>
+                <p>Estado:<input type="text" name="tname" id="cname" size="20" maxlength="30" /></p>
+                <p>Cidade:<input type="text" name="tname" id="cname" size="20" maxlength="30"
+                        placeholder="Sua Cidade" /></p>
             </fieldset>
             <fieldset id="mensagem">
                 <legend>Mensagem do Usuário</legend>
-                <p>Grau de Urgência:<input type="text" name="tname" id="cname"/></p>
-                <p>Mensagem:<input type="text" name="tname" id="cname"/></p>
+                <p>Grau de Urgência:<input type="text" name="tname" id="cname" size="20" maxlength="30" /></p>
+                <p>Mensagem:<input type="text" name="tname" id="cname" size="20" maxlength="30"
+                        placeholder="Sua Mensagem" /></p>
             </fieldset>
             <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
                 <p>Gostaria de adquirir um Google Glass quando disponível</p>
-                <p>Cor:<input type="text" name="tname" id="cname"/></p>
-                <p>Quantidade:<input type="text" name="tname" id="cname"/></p>
-                <p>Preço Total: R$<input type="text" name="tname" id="cname"/></p>
+                <p>Cor:<input type="text" name="tname" id="cname" size="20" maxlength="30" /></p>
+                <p>Quantidade:<input type="text" name="tname" id="cname" size="20" maxlength="30" /></p>
+                <p>Preço Total: R$<input type="text" name="tname" id="cname" size="20" maxlength="30"
+                        placeholder="Total a Pagar" /></p>
 
             </fieldset>
             <button>ENVIAR</button>
-        </section>
+        </form>
 
         <footer id="rodape">
             <p>&copy; Copyright 2013 - by Gustavo Guanabara </br>
