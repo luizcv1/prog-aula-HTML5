@@ -43,7 +43,7 @@
                 </ul>
             </nav>
         </header>
-        <form>
+        <form method="post" id="fContato" action="mailto:luizcvaloes@gmail.com">
             <header id="cabecalho-artigo">
 
                 <hgroup>
@@ -58,12 +58,16 @@
 
             <fieldset id="usuario">
                 <legend>Identificação do Usuário</legend>
-                <p><label for="cname"> Nome:</label> <input type="text" name="tname" id="cname" size="20" maxlength="30"
-                        placeholder="Nome completo" /></p>
-                <p> <label for="csenha"> Senha:</label><input type="password" name="tsenha" id="csenha" size="8"
+                <p>
+                    <label for="cname"> Nome:</label> <input type="text" name="tname" id="cname" size="20"
+                        maxlength="30" placeholder="Nome completo" />
+                </p>
+                <p>
+                    <label for="csenha"> Senha:</label><input type="password" name="tsenha" id="csenha" size="8"
                         maxlength="8" placeholder="8 digitos" />
                 </p>
-                <p> <label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20"
+                <p>
+                    <label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20"
                         maxlength="40" placeholder="E-mail" />
                 </p>
 
@@ -73,36 +77,84 @@
                     <input type="radio" name="tsexo" id="cfen" /><label for="cfen">
                         Feminino</label>
                 </fieldset>
-                <p> <label for="cdate"> Data de Nascimento:</label> <input type="date" name="tnasc" id="cnasc" /></p>
+
+                <p>
+                    <label for="cdate"> Data de Nascimento:</label> <input type="date" name="tnasc" id="cnasc" />
+                </p>
             </fieldset>
 
             <fieldset id="endereco">
                 <legend>Endereço do Usuário</legend>
-                <p> <label for="crua"> Logradouro:</label><input type="text" name="trua" id="crua"
-                        size="13" maxlength="80" placeholder="Rua.Av.Trav..." /></p>
-                <p> <label for="cnumero"> Número:</label><input type="number" name="tnum" id="cnum" min="0" max="99999"/></p>
-                <p> <label for="cestado"> Estado:</label><input type="text" name="testado" id="cestado" size="20"
-                        maxlength="30" /></p>
-                <p> <label for="ccidade"> Cidade:</label><input type="text" name="tcidade" id="ccidade" size="20"
-                        maxlength="30" placeholder="Sua Cidade" /></p>
+
+                <p>
+                    <label for="crua"> Logradouro:</label><input type="text" name="trua" id="crua" size="13"
+                        maxlength="80" placeholder="Rua.Av.Trav..." />
+                </p>
+                <p>
+                    <label for="cnumero"> Número:</label><input type="number" name="tnum" id="cnum" min="0"
+                        max="99999" />
+                </p>
+                <p>
+                    <label for="cEst"> Estado:</label><select name="tEst" id="cEst">
+
+                        <optgroup label="Região Sudeste">
+                            <option value="RJ">rio de janeiro</option>
+                            <option value="SP">são paulo</option>
+                            <option value="GO" selected>goias</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul">
+                            <option value="PR">paraná</option>
+                            <option value="SC">santa catarina</option>
+                            <option value="RS">rio grande do sul</option>
+                        </optgroup>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="cCid"> Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20"
+                        placeholder="Sua Cidade" list="cidades" />
+                    <datalist id="cidades">
+                        <option value="Anapolis"></option>
+                        <option value="Goianesia"></option>
+                        <option value="Aparecida de Goiania"></option>
+                        <option value="Goiania"></option>
+                    </datalist>
+                </p>
+
             </fieldset>
+
             <fieldset id="mensagem">
                 <legend>Mensagem do Usuário</legend>
-                <p><label for="curgencia">Grau de Urgência:</label><input type="text" name="turgencia" id="curgencia"
-                        size="20" maxlength="30" /></p>
-                <p> <label for="cmensagem"> Mensagem:</label><input type="text" name="tmensagem" id="cmensagem"
-                        size="20" maxlength="30" placeholder="Sua Mensagem" /></p>
+                <p>
+                    <label for="cUrg">Grau de Urgência:</label>MIN<input type="range" name="tUrg" id="cUrg" min="0"
+                        max="10" step="2" />MAX
+                </p>
+                <p>
+                    <label for="cMsg"> Mensagem:</label>
+                    <textarea name="tMsg" id="cMsg" cols="45" rows="5"
+                        placeholder="Deixe aqui Sua Menssagem..."></textarea>
+                </p>
             </fieldset>
+
             <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
-                <p> <label for=" Gostaria de adquirir um Google Glass quando disponível?"> Gostaria de adquirir um
-                        Google Glass quando disponível?</label></p>
-                <p> <label for="ccor"> Cor:</label><input type="text" name="tcor" id="ccor" size="20" maxlength="30" />
+                <p>
+                    <label for=" Gostaria de adquirir um Google Glass quando disponível?"> Gostaria de adquirir um
+                        Google Glass quando disponível?</label>
                 </p>
-                <p> <label for="cquantidade"> Quantidade:</label><input type="text" name="tquantidade" id="cquantidade"
-                        size="20" maxlength="30" /></p>
-                <p> <label for="cpreco"> Preço Total: R$</label><input type="text" name="tpreco" id="cpreco" size="20"
-                        maxlength="30" placeholder="Total a Pagar" /></p>
+                <p>
+                    <label for="ccor"> Cor:</label><input type="text" name="tcor" id="ccor" size="20" maxlength="30" />
+                </p>
+                <p>
+                    <label for="cquantidade"> Quantidade:</label><input type="text" name="tquantidade" id="cquantidade"
+                        size="20" maxlength="30" />
+                </p>
+                <p>
+                    <label for="cpreco"> Preço Total: R$</label><input type="text" name="tpreco" id="cpreco" size="20"
+                        maxlength="30" placeholder="Total a Pagar" />
+                </p>
 
             </fieldset>
             <button>ENVIAR</button>
