@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fale-conosco</title>
     <link rel="stylesheet" href="_css/estilo.css" />
-    <link rel="stylesheet" href="_css/fotos.css" />
-
-
+    <link rel="stylesheet" href="_css/form.css" />
 
 </head>
 <script src="_javaScript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -43,7 +48,7 @@
                 </ul>
             </nav>
         </header>
-        <form method="post" id="fContato" action="mailto:luizcvaloes@gmail.com">
+        <form method="post" id="fContato" action="mailto:luizcvaloes@gmail.com" oninput="calc_total();">
             <header id="cabecalho-artigo">
 
                 <hgroup>
@@ -133,7 +138,7 @@
                 </p>
                 <p>
                     <label for="cMsg"> Mensagem:</label>
-                    <textarea name="tMsg" id="cMsg" cols="45" rows="5"
+                    <textarea name="tMsg" id="cMsg" cols="35" rows="5"
                         placeholder="Deixe aqui Sua Menssagem..."></textarea>
                 </p>
             </fieldset>
@@ -141,30 +146,35 @@
             <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
                 <p>
+                    <input type="checkbox" name="tPed" id="cPed" checked>
                     <label for=" Gostaria de adquirir um Google Glass quando disponível?"> Gostaria de adquirir um
                         Google Glass quando disponível?</label>
                 </p>
                 <p>
-                    <label for="ccor"> Cor:</label><input type="text" name="tcor" id="ccor" size="20" maxlength="30" />
+                    <label for="ccor"> Cor:</label><input type="color" name="tCor" id="cCor" value="#0000FF" />
                 </p>
                 <p>
-                    <label for="cquantidade"> Quantidade:</label><input type="text" name="tquantidade" id="cquantidade"
-                        size="20" maxlength="30" />
+                    <label for="cQtd"> Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5"
+                        value="0" />
                 </p>
                 <p>
-                    <label for="cpreco"> Preço Total: R$</label><input type="text" name="tpreco" id="cpreco" size="20"
-                        maxlength="30" placeholder="Total a Pagar" />
+                    <label for="cTot"> Preço Total: R$</label><input type="text" name="tTot" id="cTot"
+                        placeholder="Total a Pagar" readonly />
                 </p>
 
             </fieldset>
-            <button>ENVIAR</button>
+
+            <input type="image" name="tEnviar" src="_imagens/botao-enviar.png" />
+
         </form>
 
         <footer id="rodape">
+
             <p>&copy; Copyright 2013 - by Gustavo Guanabara </br>
                 <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a>
                 | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a>
             </p>
+
         </footer>
 
     </div>
